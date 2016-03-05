@@ -20,6 +20,6 @@ from lights import views
 
 
 urlpatterns = [
-    url(r'^', views.show_results),
+    url(r'^$', views.show_results),
     url(r'^admin/', admin.site.urls),
 ]
