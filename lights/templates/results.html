@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Sampling results</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <th>State</th>
+      <th>Created date</th>
+    </tr>
+    {% for sample in samples %}
+      <tr>
+        <td>{{sample.state|yesno:"On,Off"}}</td>
+        <td>{{sample.created_date|date:"F j, G:i:s"}}</td>
+      </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
